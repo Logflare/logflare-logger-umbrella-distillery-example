@@ -24,6 +24,10 @@ environment :dev do
   set(dev_mode: true)
   set(include_erts: false)
   set(cookie: :"wjWH_IYLTWPVOxaqV]77!bO~pt=N*z]m!xO!*T7{)q_tR.:O%/N4p51QE.ZxBkGN")
+
+  set commands: [
+    remote_console_no_crash: "rel/commands/remote_console_no_crash.sh"
+  ]
 end
 
 environment :prod do
